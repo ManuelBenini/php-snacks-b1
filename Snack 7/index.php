@@ -25,7 +25,7 @@
     [
       'nome' => 'Francesco',
       'cognome' => 'Ercoli',
-      'voti' => [1,2,3,4,5]
+      'voti' => [5,6,7,8,9,9]
     ]
   ];
 
@@ -35,8 +35,14 @@
     for($i = 0; $i < count($array); $i++){
       $somma += $array[$i];
     }
-
-    return $somma / count($array);
+    
+    $media = $somma / count($array);
+    
+    if(is_int($media)){
+      return $media;
+    }else{
+      return number_format($media, 2, '.', '');
+    }
   };
 
 ?>
