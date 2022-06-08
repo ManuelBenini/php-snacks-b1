@@ -17,7 +17,7 @@
     };
     return $newArray;
   };
-
+ 
   $random_numbers = getUniqueRandom(1, 15, 15);
 
   var_dump($random_numbers);
